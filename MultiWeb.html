@@ -6,31 +6,79 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Ismael Martín" />        
-        
+
         <style>
-            html{
-             
-            }  
             body{
-                                width: 100%;
-                                height: 100%;
-   padding: 0px;
+                width: 100%;
+                height: 100%;
+                padding: 0px;
                 margin: 0px;
+                font-family: 'Whitney SSm A','Whitney SSm B',sans-serif;
+                line-height: 28px;
+                letter-spacing:0.6px;   
             }
-            img{
-                                width: 100%;
+            #cabecera img{
+                width: 100%;
+            }
+            #instrucciones{
+                background-color:burlywood;
+                padding: 10px;
+            }
+            #titulo{
+                text-align: center;
+                font-size: 20px;
+                color:burlywood;
+            }
+            #add{
+                color:green;
+                display: flex;
+                margin-left: 38%;
 
             }
+            #add img,#delete img,#broswer img{
+                height: 100%;
+            }
+            #delete{
+                color:red;
+                display: flex;
+                margin-left: 38%;
+            }
+            #broswer{
+                color:purple;
+                display: flex;
+                margin-left: 38%;
+            }
+            #ocultar{
+                color:blue;
+                display: flex;
+                margin-left: 38%;
+            }
+
         </style>
 
     </head>
 
 
     <body>
-        <div id="cabecera" style="width: 100%">
-            <img src="img/bannerGooglePlay.png" title="Cabecera">
+        <div id="cabecera">
+            <img src="img/bannerGooglePlay.png" id="cabecera" title="Cabecera">
         </div>
-       
+        <div id="titulo">
+            <h1>Museumis</h1>
+        </div>
+        <div id="instrucciones">            
+            <p id="add"><img src="img/ic_add.png" title="ADD">
+                ADD NEW WEB<p>
+            <p id="delete"><img src="img/ic_delete.png" title="Remove">
+                REMOVE WEB<p>
+            <p id="broswer"><img src="img/ic_link.png" title="brower">
+                BROSWER<p>
+            <p id="ocultar"><img src="img/ic_chevron_left.png" title="hidder">
+                OCULTE<p>
+
+        </div>
+
+
     </body>
-   
+
 </html>
